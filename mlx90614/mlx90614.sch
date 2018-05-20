@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mlx90614-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -166,10 +167,7 @@ Connection ~ 5350 3650
 Wire Wire Line
 	5350 3650 6450 3650
 Wire Wire Line
-	5000 3750 5750 3750
-Wire Wire Line
 	5750 3400 5750 3750
-Connection ~ 5750 3750
 Wire Wire Line
 	5750 3750 6450 3750
 $Comp
@@ -185,13 +183,8 @@ F 3 "" H 4500 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 4250 4500 4250
-Wire Wire Line
-	4000 3750 4000 3950
-Wire Wire Line
-	4000 3100 4000 3750
-Connection ~ 4000 3750
 $Comp
-L mlx90614:MLX90614 U1
+L Melexis:MLX90614 U1
 U 1 1 5AFA6F32
 P 4500 3750
 F 0 "U1" V 4285 4160 60  0000 C CNN
@@ -203,7 +196,6 @@ F 3 "" H 4500 3750 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 4250 4500 4350
-Connection ~ 4500 4250
 Wire Wire Line
 	6450 3850 6050 3850
 Wire Wire Line
@@ -218,4 +210,19 @@ Connection ~ 5750 3100
 Connection ~ 6050 3100
 Wire Wire Line
 	6050 3100 6050 3550
+Wire Wire Line
+	4000 3100 4000 3750
+Wire Wire Line
+	4900 3750 5750 3750
+Connection ~ 5750 3750
+Wire Wire Line
+	4500 3250 4500 3350
+Wire Wire Line
+	4100 3750 4000 3750
+Connection ~ 4000 3750
+Wire Wire Line
+	4000 3750 4000 3950
+Wire Wire Line
+	4500 4150 4500 4250
+Connection ~ 4500 4250
 $EndSCHEMATC

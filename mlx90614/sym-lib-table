@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name mlx90614)(type Legacy)(uri /home/sghctoma/projects/kicad/common/library/mlx90614.lib)(options "")(descr ""))
+  (lib (name Melexis)(type Legacy)(uri /home/sghctoma/projects/kicad/terrapi-boards/mlx90614/library/Melexis.lib)(options "")(descr ""))
 )

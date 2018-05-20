@@ -1,0 +1,221 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "TerraPi IR thermometer"
+Date "2018-05-15"
+Rev "v0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "License: MIT"
+$EndDescr
+$Comp
+L device:R R1
+U 1 1 5AFA7019
+P 5350 3250
+F 0 "R1" V 5430 3250 50  0000 C CNN
+F 1 "10K" V 5350 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5280 3250 50  0001 C CNN
+F 3 "" H 5350 3250 50  0001 C CNN
+	1    5350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5AFA7080
+P 5750 3250
+F 0 "R2" V 5830 3250 50  0000 C CNN
+F 1 "10K" V 5750 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5680 3250 50  0001 C CNN
+F 3 "" H 5750 3250 50  0001 C CNN
+	1    5750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C1
+U 1 1 5AFA70FA
+P 4000 4100
+F 0 "C1" H 4025 4200 50  0000 L CNN
+F 1 "0.1uF" H 4025 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4038 3950 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5AFAAAA3
+P 6050 2950
+F 0 "#PWR01" H 6050 2800 50  0001 C CNN
+F 1 "+3.3V" H 6050 3090 50  0000 C CNN
+F 2 "" H 6050 2950 50  0001 C CNN
+F 3 "" H 6050 2950 50  0001 C CNN
+	1    6050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04 J1
+U 1 1 5AFAAB99
+P 7250 3650
+F 0 "J1" H 7250 3850 50  0000 C CNN
+F 1 "Conn_01x04" H 7250 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7250 3650 50  0001 C CNN
+F 3 "" H 7250 3650 50  0001 C CNN
+	1    7250 3650
+	1    0    0    -1  
+$EndComp
+Text Label 6885 3550 0    60   ~ 0
+Vdd
+Text Label 6885 3650 0    60   ~ 0
+SDA
+Text Label 6885 3750 0    60   ~ 0
+SCL
+Text Label 6885 3850 0    60   ~ 0
+GND
+Text Label 6450 3550 0    60   ~ 0
+Vdd
+Text Label 6450 3650 0    60   ~ 0
+SDA
+Text Label 6450 3750 0    60   ~ 0
+SCL
+Text Label 6450 3850 0    60   ~ 0
+GND
+Wire Wire Line
+	5075 3250 4500 3250
+Wire Wire Line
+	6885 3550 7050 3550
+Wire Wire Line
+	6885 3650 7050 3650
+Wire Wire Line
+	6885 3750 7050 3750
+Wire Wire Line
+	6885 3850 7050 3850
+Wire Wire Line
+	5075 3650 5075 3250
+$Comp
+L power:GND #PWR02
+U 1 1 5AFAB3D1
+P 6050 4350
+F 0 "#PWR02" H 6050 4100 50  0001 C CNN
+F 1 "GND" H 6050 4200 50  0000 C CNN
+F 2 "" H 6050 4350 50  0001 C CNN
+F 3 "" H 6050 4350 50  0001 C CNN
+	1    6050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5AFABA15
+P 6950 4500
+F 0 "#PWR04" H 6950 4250 50  0001 C CNN
+F 1 "GND" H 6950 4350 50  0000 C CNN
+F 2 "" H 6950 4500 50  0001 C CNN
+F 3 "" H 6950 4500 50  0001 C CNN
+	1    6950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5AFABA33
+P 7300 4500
+F 0 "#PWR05" H 7300 4350 50  0001 C CNN
+F 1 "+3V3" H 7300 4640 50  0000 C CNN
+F 2 "" H 7300 4500 50  0001 C CNN
+F 3 "" H 7300 4500 50  0001 C CNN
+	1    7300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG06
+U 1 1 5AFABA51
+P 6950 4500
+F 0 "#FLG06" H 6950 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 6950 4650 50  0000 C CNN
+F 2 "" H 6950 4500 50  0001 C CNN
+F 3 "" H 6950 4500 50  0001 C CNN
+	1    6950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG07
+U 1 1 5AFABA90
+P 7300 4500
+F 0 "#FLG07" H 7300 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 7300 4650 50  0000 C CNN
+F 2 "" H 7300 4500 50  0001 C CNN
+F 3 "" H 7300 4500 50  0001 C CNN
+	1    7300 4500
+	-1   0    0    1   
+$EndComp
+Text Notes 4480 2725 0    60   ~ 0
+R1 and R2 are not necessary when used with the Raspberry Pi\n(it already has 1.8K pull-up resistors on SDA and SCL)
+Wire Wire Line
+	4000 3100 5350 3100
+Connection ~ 5350 3100
+Wire Wire Line
+	5350 3100 5750 3100
+Wire Wire Line
+	5075 3650 5350 3650
+Wire Wire Line
+	5350 3400 5350 3650
+Connection ~ 5350 3650
+Wire Wire Line
+	5350 3650 6450 3650
+Wire Wire Line
+	5000 3750 5750 3750
+Wire Wire Line
+	5750 3400 5750 3750
+Connection ~ 5750 3750
+Wire Wire Line
+	5750 3750 6450 3750
+$Comp
+L power:GND #PWR03
+U 1 1 5AFAB4B5
+P 4500 4350
+F 0 "#PWR03" H 4500 4100 50  0001 C CNN
+F 1 "GND" H 4500 4200 50  0000 C CNN
+F 2 "" H 4500 4350 50  0001 C CNN
+F 3 "" H 4500 4350 50  0001 C CNN
+	1    4500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4250 4500 4250
+Wire Wire Line
+	4000 3750 4000 3950
+Wire Wire Line
+	4000 3100 4000 3750
+Connection ~ 4000 3750
+$Comp
+L mlx90614:MLX90614 U1
+U 1 1 5AFA6F32
+P 4500 3750
+F 0 "U1" V 4285 4160 60  0000 C CNN
+F 1 "MLX90614" V 4155 4020 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-39-4_Window" H 4500 3750 60  0001 C CNN
+F 3 "" H 4500 3750 60  0001 C CNN
+	1    4500 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4250 4500 4350
+Connection ~ 4500 4250
+Wire Wire Line
+	6450 3850 6050 3850
+Wire Wire Line
+	6050 3850 6050 4350
+Wire Wire Line
+	6050 2950 6050 3100
+Wire Wire Line
+	6050 3550 6450 3550
+Wire Wire Line
+	5750 3100 6050 3100
+Connection ~ 5750 3100
+Connection ~ 6050 3100
+Wire Wire Line
+	6050 3100 6050 3550
+$EndSCHEMATC

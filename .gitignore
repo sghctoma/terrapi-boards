@@ -24,3 +24,6 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Datasheet PDFs (I don't think I have the right to redistribute them)
+*/datasheets/*.pdf

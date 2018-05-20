@@ -1,0 +1,40 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# LM4040
+#
+DEF ~LM4040 U 0 40 Y Y 1 L N
+F0 "U" -300 225 50 H V L BNN
+F1 "LM4040" 0 0 50 H I L BNN
+F2 "SOT23-3" 0 0 50 H I L BNN
+F3 "None" 0 0 50 H I L BNN
+F4 "Unavailable" 0 0 50 H I L BNN
+F5 "Amphenol" 0 0 50 H I L BNN
+F6 "LM4040" 0 0 50 H I L BNN
+F7 "None" 0 0 50 H I L BNN
+F8 "lm4040 improved precision micropower shunt voltage reference with multiple reverse breakdown voltages" 0 0 50 H I L BNN
+DRAW
+T 0 -25 -276 60 0 0 0 LM4040 Normal 0 L B
+P 2 0 0 10 -300 -200 300 -200 N
+P 2 0 0 10 -300 -100 -300 -200 N
+P 2 0 0 10 -300 100 -300 -100 N
+P 2 0 0 10 -300 200 -300 100 N
+P 2 0 0 10 -275 -50 -175 -50 N
+P 2 0 0 10 -275 50 -285 70 N
+P 2 0 0 10 -275 50 -225 50 N
+P 2 0 0 6 -225 -100 -300 -100 N
+P 2 0 0 10 -225 50 -275 -50 N
+P 2 0 0 10 -225 50 -175 50 N
+P 2 0 0 6 -225 100 -300 100 N
+P 2 0 0 6 -225 100 -225 -100 N
+P 2 0 0 10 -175 -50 -225 50 N
+P 2 0 0 10 -175 50 -165 30 N
+P 2 0 0 10 300 -200 300 200 N
+P 2 0 0 10 300 200 -300 200 N
+X ANODE 1 -400 100 100 R 40 40 0 0 B
+X CATHODE 2 -400 -100 100 R 40 40 0 0 I
+X NC 3 400 0 100 L 40 40 0 0 B
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,620 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "jeu. 02 avril 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 8700 1100 0    60   ~ 0
+1(Tx)
+Text Label 8700 1200 0    60   ~ 0
+0(Rx)
+Text Label 8700 1300 0    60   ~ 0
+Reset1
+Text Label 8700 1500 0    60   ~ 0
+2
+Text Label 8700 1600 0    60   ~ 0
+3(**)
+Text Label 8700 1700 0    60   ~ 0
+4
+Text Label 8700 1800 0    60   ~ 0
+5(**)
+Text Label 8700 1900 0    60   ~ 0
+6(**)
+Text Label 8700 2000 0    60   ~ 0
+7
+Text Label 8700 2100 0    60   ~ 0
+8
+Text Label 8700 2200 0    60   ~ 0
+9(**)
+Text Label 8700 2300 0    60   ~ 0
+10(**/SS)
+Text Label 8700 2400 0    60   ~ 0
+11(**/MOSI)
+Text Label 8700 2500 0    60   ~ 0
+12(MISO)
+Text Label 10550 2500 0    60   ~ 0
+13(SCK)
+Text Label 10550 2200 0    60   ~ 0
+A0
+Text Label 10550 2100 0    60   ~ 0
+A1
+Text Label 10550 2000 0    60   ~ 0
+A2
+Text Label 10550 1900 0    60   ~ 0
+A3
+Text Label 10550 1800 0    60   ~ 0
+A4
+Text Label 10550 1700 0    60   ~ 0
+A5
+Text Label 10550 1600 0    60   ~ 0
+A6
+Text Label 10550 1500 0    60   ~ 0
+A7
+Text Label 10550 2300 0    60   ~ 0
+AREF
+Text Label 10550 1300 0    60   ~ 0
+Reset2
+Text Notes 8500 575  0    60   ~ 0
+Shield for Arduino Nano
+Text Label 10250 950  1    60   ~ 0
+Vin
+Wire Notes Line
+	8475 650  9675 650 
+Wire Notes Line
+	9675 650  9675 475 
+$Comp
+L Connector:Conn_01x15 P1
+U 1 1 56D73FAC
+P 9550 1800
+F 0 "P1" H 9550 2600 50  0000 C CNN
+F 1 "Digital" V 9650 1800 50  0000 C CNN
+F 2 "Socket_Arduino_Nano:Socket_Strip_Arduino_1x15" H 9550 1800 50  0001 C CNN
+F 3 "" H 9550 1800 50  0000 C CNN
+	1    9550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15 P2
+U 1 1 56D740C7
+P 9950 1800
+F 0 "P2" H 9950 2600 50  0000 C CNN
+F 1 "Analog" V 10050 1800 50  0000 C CNN
+F 2 "Socket_Arduino_Nano:Socket_Strip_Arduino_1x15" H 9950 1800 50  0001 C CNN
+F 3 "" H 9950 1800 50  0000 C CNN
+	1    9950 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 56D7422C
+P 9250 2600
+F 0 "#PWR01" H 9250 2350 50  0001 C CNN
+F 1 "GND" H 9250 2450 50  0000 C CNN
+F 2 "" H 9250 2600 50  0000 C CNN
+F 3 "" H 9250 2600 50  0000 C CNN
+	1    9250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1400 9250 1400
+Wire Wire Line
+	9250 1400 9250 2600
+Wire Wire Line
+	9350 1100 8700 1100
+Wire Wire Line
+	8700 1200 9350 1200
+Wire Wire Line
+	9350 1300 8700 1300
+Wire Wire Line
+	8700 1500 9350 1500
+Wire Wire Line
+	9350 1600 8700 1600
+Wire Wire Line
+	8700 1700 9350 1700
+Wire Wire Line
+	9350 1800 8700 1800
+Wire Wire Line
+	8700 1900 9350 1900
+Wire Wire Line
+	9350 2000 8700 2000
+Wire Wire Line
+	8700 2100 9350 2100
+Wire Wire Line
+	9350 2200 8700 2200
+Wire Wire Line
+	8700 2300 9350 2300
+Wire Wire Line
+	9350 2400 8700 2400
+Wire Wire Line
+	8700 2500 9350 2500
+$Comp
+L power:GND #PWR02
+U 1 1 56D746ED
+P 10250 2600
+F 0 "#PWR02" H 10250 2350 50  0001 C CNN
+F 1 "GND" H 10250 2450 50  0000 C CNN
+F 2 "" H 10250 2600 50  0000 C CNN
+F 3 "" H 10250 2600 50  0000 C CNN
+	1    10250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2600 10250 1200
+Wire Wire Line
+	10250 1200 10150 1200
+Wire Wire Line
+	10150 1100 10250 1100
+Wire Wire Line
+	10250 1100 10250 950 
+$Comp
+L power:+5V #PWR03
+U 1 1 56D747E8
+P 10350 950
+F 0 "#PWR03" H 10350 800 50  0001 C CNN
+F 1 "+5V" H 10350 1090 28  0000 C CNN
+F 2 "" H 10350 950 50  0000 C CNN
+F 3 "" H 10350 950 50  0000 C CNN
+	1    10350 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 950  10350 1400
+Wire Wire Line
+	10350 1400 10150 1400
+$Comp
+L power:+3.3V #PWR04
+U 1 1 56D74854
+P 10450 950
+F 0 "#PWR04" H 10450 800 50  0001 C CNN
+F 1 "+3.3V" H 10450 1090 28  0000 C CNN
+F 2 "" H 10450 950 50  0000 C CNN
+F 3 "" H 10450 950 50  0000 C CNN
+	1    10450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 950  10450 2400
+Wire Wire Line
+	10450 2400 10150 2400
+Wire Wire Line
+	10550 1300 10150 1300
+Wire Wire Line
+	10150 1500 10550 1500
+Wire Wire Line
+	10550 1600 10150 1600
+Wire Wire Line
+	10550 1700 10150 1700
+Wire Wire Line
+	10150 1800 10550 1800
+Wire Wire Line
+	10550 1900 10150 1900
+Wire Wire Line
+	10550 2000 10150 2000
+Wire Wire Line
+	10150 2100 10550 2100
+Wire Wire Line
+	10550 2200 10150 2200
+Wire Wire Line
+	10550 2300 10150 2300
+Wire Wire Line
+	10150 2500 10550 2500
+Wire Notes Line
+	11200 2850 8450 2850
+Wire Notes Line
+	8450 2850 8450 500 
+Text Notes 9650 1100 0    60   ~ 0
+1
+$Comp
+L LMC6081IM:LMC6081IM U1
+U 1 1 5AF92DCC
+P 3020 3010
+F 0 "U1" H 2829 3580 50  0000 L BNN
+F 1 "LMC6081IM" H 2786 2103 50  0000 L BNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3020 3010 50  0001 L BNN
+F 3 "Precision CMOS Single Operational Amplifier 8-SOIC -40 to 85" H 3020 3010 50  0001 L BNN
+F 4 "Texas Instruments" H 3020 3010 50  0001 L BNN "Field4"
+F 5 "LMC6081IM" H 3020 3010 50  0001 L BNN "Field5"
+F 6 "Good" H 3020 3010 50  0001 L BNN "Field6"
+F 7 "1.56 USD" H 3020 3010 50  0001 L BNN "Field7"
+F 8 "SOIC-8 Texas Instruments" H 3020 3010 50  0001 L BNN "Field8"
+	1    3020 3010
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C1
+U 1 1 5AF92F2B
+P 2040 2530
+F 0 "C1" H 2065 2630 50  0000 L CNN
+F 1 "0.1uF" H 2065 2430 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2078 2380 50  0001 C CNN
+F 3 "" H 2040 2530 50  0001 C CNN
+	1    2040 2530
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C C2
+U 1 1 5AF92F6E
+P 3070 1550
+F 0 "C2" H 3095 1650 50  0000 L CNN
+F 1 "10nF" H 3095 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3108 1400 50  0001 C CNN
+F 3 "" H 3070 1550 50  0001 C CNN
+	1    3070 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5AF92FB8
+P 4600 1960
+F 0 "R2" V 4680 1960 50  0000 C CNN
+F 1 "1K" V 4600 1960 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4530 1960 50  0001 C CNN
+F 3 "" H 4600 1960 50  0001 C CNN
+	1    4600 1960
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R3
+U 1 1 5AF9301F
+P 3070 1960
+F 0 "R3" V 3150 1960 50  0000 C CNN
+F 1 "10M" V 3070 1960 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3000 1960 50  0001 C CNN
+F 3 "" H 3070 1960 50  0001 C CNN
+	1    3070 1960
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5AF9306C
+P 4030 2380
+F 0 "R1" V 4110 2380 50  0000 C CNN
+F 1 "11K" V 4030 2380 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3960 2380 50  0001 C CNN
+F 3 "" H 4030 2380 50  0001 C CNN
+	1    4030 2380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5AF930D8
+P 1530 3800
+F 0 "#PWR05" H 1530 3550 50  0001 C CNN
+F 1 "GND" H 1530 3650 50  0000 C CNN
+F 2 "" H 1530 3800 50  0001 C CNN
+F 3 "" H 1530 3800 50  0001 C CNN
+	1    1530 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5AF9310E
+P 5040 2270
+F 0 "#PWR06" H 5040 2020 50  0001 C CNN
+F 1 "GND" H 5040 2120 50  0000 C CNN
+F 2 "" H 5040 2270 50  0001 C CNN
+F 3 "" H 5040 2270 50  0001 C CNN
+	1    5040 2270
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5AF9313D
+P 1890 2530
+F 0 "#PWR07" H 1890 2280 50  0001 C CNN
+F 1 "GND" H 1890 2380 50  0000 C CNN
+F 2 "" H 1890 2530 50  0001 C CNN
+F 3 "" H 1890 2530 50  0001 C CNN
+	1    1890 2530
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2320 3610 2150 3610
+Wire Wire Line
+	2320 3010 2150 3010
+Wire Wire Line
+	2150 3010 2150 3610
+Connection ~ 2150 3610
+$Comp
+L power:+5V #PWR08
+U 1 1 5AF934D8
+P 2320 2340
+F 0 "#PWR08" H 2320 2190 50  0001 C CNN
+F 1 "+5V" H 2320 2480 50  0000 C CNN
+F 2 "" H 2320 2340 50  0001 C CNN
+F 3 "" H 2320 2340 50  0001 C CNN
+	1    2320 2340
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2320 2340 2320 2530
+Wire Wire Line
+	2190 2530 2320 2530
+Connection ~ 2320 2530
+Wire Wire Line
+	2320 2910 1530 2910
+Wire Wire Line
+	4030 2710 4030 2530
+Wire Wire Line
+	3220 1960 4030 1960
+Wire Wire Line
+	4030 1550 4030 1960
+Wire Wire Line
+	1530 1960 2920 1960
+Connection ~ 1530 2910
+$Comp
+L device:D_Photo D1
+U 1 1 5AF93C9A
+P 1530 3300
+F 0 "D1" H 1550 3370 50  0000 L CNN
+F 1 "D_Photo" H 1490 3190 50  0000 C CNN
+F 2 "LEDs:LED_PLCC-2" H 1480 3300 50  0001 C CNN
+F 3 "" H 1480 3300 50  0001 C CNN
+	1    1530 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1530 3400 1530 3610
+Wire Wire Line
+	1530 1550 1530 1960
+Connection ~ 1530 3610
+Connection ~ 4030 1960
+Wire Wire Line
+	4750 1960 5040 1960
+Wire Wire Line
+	5040 1960 5040 2270
+Wire Wire Line
+	3220 1550 4030 1550
+Wire Wire Line
+	2920 1550 1530 1550
+Connection ~ 1530 1960
+NoConn ~ 8700 1100
+NoConn ~ 8700 1200
+NoConn ~ 8700 1500
+NoConn ~ 8700 1600
+NoConn ~ 8700 1700
+NoConn ~ 8700 1800
+NoConn ~ 8700 1900
+NoConn ~ 8700 2000
+NoConn ~ 8700 2100
+NoConn ~ 8700 2200
+NoConn ~ 8700 2300
+NoConn ~ 8700 2400
+NoConn ~ 8700 2500
+NoConn ~ 10550 1600
+NoConn ~ 10550 1700
+NoConn ~ 10550 1800
+NoConn ~ 10550 1900
+NoConn ~ 10550 2000
+NoConn ~ 10550 2100
+NoConn ~ 10550 2500
+$Comp
+L power:+5V #PWR09
+U 1 1 5AF951E1
+P 10240 6260
+F 0 "#PWR09" H 10240 6110 50  0001 C CNN
+F 1 "+5V" H 10240 6400 50  0000 C CNN
+F 2 "" H 10240 6260 50  0001 C CNN
+F 3 "" H 10240 6260 50  0001 C CNN
+	1    10240 6260
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG010
+U 1 1 5AF9520F
+P 10240 6260
+F 0 "#FLG010" H 10240 6335 50  0001 C CNN
+F 1 "PWR_FLAG" H 10240 6410 50  0000 C CNN
+F 2 "" H 10240 6260 50  0001 C CNN
+F 3 "" H 10240 6260 50  0001 C CNN
+	1    10240 6260
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5AF95407
+P 10630 6270
+F 0 "#PWR011" H 10630 6020 50  0001 C CNN
+F 1 "GND" H 10630 6120 50  0000 C CNN
+F 2 "" H 10630 6270 50  0001 C CNN
+F 3 "" H 10630 6270 50  0001 C CNN
+	1    10630 6270
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG012
+U 1 1 5AF95435
+P 10630 6270
+F 0 "#FLG012" H 10630 6345 50  0001 C CNN
+F 1 "PWR_FLAG" H 10630 6420 50  0000 C CNN
+F 2 "" H 10630 6270 50  0001 C CNN
+F 3 "" H 10630 6270 50  0001 C CNN
+	1    10630 6270
+	1    0    0    -1  
+$EndComp
+Text Label 10980 6150 0    60   ~ 0
+Vin
+$Comp
+L power:PWR_FLAG #FLG013
+U 1 1 5AF95695
+P 10980 6150
+F 0 "#FLG013" H 10980 6225 50  0001 C CNN
+F 1 "PWR_FLAG" H 10980 6300 50  0000 C CNN
+F 2 "" H 10980 6150 50  0001 C CNN
+F 3 "" H 10980 6150 50  0001 C CNN
+	1    10980 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR014
+U 1 1 5AF9587F
+P 9840 6260
+F 0 "#PWR014" H 9840 6110 50  0001 C CNN
+F 1 "+3V3" H 9840 6400 50  0000 C CNN
+F 2 "" H 9840 6260 50  0001 C CNN
+F 3 "" H 9840 6260 50  0001 C CNN
+	1    9840 6260
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG015
+U 1 1 5AF958AD
+P 9840 6260
+F 0 "#FLG015" H 9840 6335 50  0001 C CNN
+F 1 "PWR_FLAG" H 9840 6410 50  0000 C CNN
+F 2 "" H 9840 6260 50  0001 C CNN
+F 3 "" H 9840 6260 50  0001 C CNN
+	1    9840 6260
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM4040:LM4040 U2
+U 1 1 5AF95B3E
+P 2320 5790
+F 0 "U2" H 2020 6015 50  0000 L BNN
+F 1 "LM4040" H 2320 5790 50  0001 L BNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2320 5790 50  0001 L BNN
+F 3 "None" H 2320 5790 50  0001 L BNN
+F 4 "Unavailable" H 2320 5790 50  0001 L BNN "Field4"
+F 5 "Amphenol" H 2320 5790 50  0001 L BNN "Field5"
+F 6 "LM4040" H 2320 5790 50  0001 L BNN "Field6"
+F 7 "None" H 2320 5790 50  0001 L BNN "Field7"
+F 8 "lm4040 improved precision micropower shunt voltage reference with multiple reverse breakdown voltages" H 2320 5790 50  0001 L BNN "Field8"
+	1    2320 5790
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2720 5790
+$Comp
+L device:R R5
+U 1 1 5AF95C2E
+P 1790 5380
+F 0 "R5" V 1870 5380 50  0000 C CNN
+F 1 "750" V 1790 5380 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1720 5380 50  0001 C CNN
+F 3 "" H 1790 5380 50  0001 C CNN
+	1    1790 5380
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR016
+U 1 1 5AF95CCD
+P 1790 5230
+F 0 "#PWR016" H 1790 5080 50  0001 C CNN
+F 1 "+5V" H 1790 5370 50  0000 C CNN
+F 2 "" H 1790 5230 50  0001 C CNN
+F 3 "" H 1790 5230 50  0001 C CNN
+	1    1790 5230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1790 5530 1790 5610
+Wire Wire Line
+	1790 5690 1920 5690
+$Comp
+L device:R R4
+U 1 1 5AF95DD7
+P 1490 5840
+F 0 "R4" V 1570 5840 50  0000 C CNN
+F 1 "10K" V 1490 5840 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1420 5840 50  0001 C CNN
+F 3 "" H 1490 5840 50  0001 C CNN
+	1    1490 5840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1490 5450 1490 5610
+Wire Wire Line
+	1490 5610 1790 5610
+Connection ~ 1790 5610
+$Comp
+L power:GND #PWR017
+U 1 1 5AF95F39
+P 1490 5990
+F 0 "#PWR017" H 1490 5740 50  0001 C CNN
+F 1 "GND" H 1490 5840 50  0000 C CNN
+F 2 "" H 1490 5990 50  0001 C CNN
+F 3 "" H 1490 5990 50  0001 C CNN
+	1    1490 5990
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5AF95FFD
+P 1920 5990
+F 0 "#PWR018" H 1920 5740 50  0001 C CNN
+F 1 "GND" H 1920 5840 50  0000 C CNN
+F 2 "" H 1920 5990 50  0001 C CNN
+F 3 "" H 1920 5990 50  0001 C CNN
+	1    1920 5990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1920 5990 1920 5890
+Text Label 1490 5450 0    60   ~ 0
+AREF
+Connection ~ 1490 5610
+Text Notes 3630 3750 0    60   ~ 0
+photocurrent(nA) = 1.7 x UVI\ngain = R3 x (1 + R1/R2)\n---\n40.96 nA = 24.1 UVI\n---\n24.1 UVI -> gain = 100M	| R1 = 8.2K - > 92M -> 22.2 UVI\n20 UVI -> gain = 120M		| R1 = 11K\n15 UVI -> gain = 160M		| R1 = 15K
+Text Label 4540 2710 0    60   ~ 0
+A7
+Connection ~ 4030 2710
+Wire Wire Line
+	3720 2710 4030 2710
+NoConn ~ 10550 2200
+NoConn ~ 10550 1300
+NoConn ~ 8700 1300
+Text Notes 1440 6440 0    60   ~ 0
+R = (VIN - VSHUNT) / (ILOAD + IZ)\nTotal load must be between 60uA and 15mA
+Wire Wire Line
+	2150 3610 1530 3610
+Wire Wire Line
+	2320 2530 2320 2710
+Wire Wire Line
+	1530 2910 1530 3100
+Wire Wire Line
+	1530 3610 1530 3800
+Wire Wire Line
+	4030 1960 4450 1960
+Wire Wire Line
+	4030 1960 4030 2230
+Wire Wire Line
+	1530 1960 1530 2910
+Wire Wire Line
+	1790 5610 1790 5690
+Wire Wire Line
+	1490 5610 1490 5690
+Wire Wire Line
+	4030 2710 4540 2710
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 5222)(type Legacy)(uri /home/sghctoma/projects/kicad/terrapi-boards/sensor/library/5222.lib)(options "")(descr ""))
+  (lib (name ADS1015IDGST)(type Legacy)(uri /usr/home/sghctoma/projects/kicad/terrapi-boards/sensor/library/ADS1015IDGST.lib)(options "")(descr ""))
+)

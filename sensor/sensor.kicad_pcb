@@ -784,10 +784,10 @@
     (pad "" np_thru_hole circle (at -5.08 0) (size 3.5 3.5) (drill 3.17) (layers *.Cu *.Mask))
   )
 
+  (gr_line (start 100 100) (end 190 100) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 100 100) (end 100 150) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 100 150) (end 190 150) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 190 100) (end 190 150) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 100 100) (end 190 100) (layer Edge.Cuts) (width 0.05))
 
   (via (at 156.025 121) (size 0.6) (drill 0.3) (layers F.Cu B.Cu) (net 1))
   (segment (start 154.25 121) (end 156.025 121) (width 0.127) (layer F.Cu) (net 1))
